@@ -1,0 +1,23 @@
+{
+  "name": "js-patterns",
+  "version": "1.0.0",
+  "description": "Коллекция паттернов проектирования на JavaScript — с практическими примерами и пошаговым обучением.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky",
+    "jst": "jst",
+    "_": "jst"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@commitlint/cli": "^20.4.0",
+    "@commitlint/config-conventional": "^20.4.0",
+    "@vv0rkz/js-template": "^1.4.0",
+    "changelogen": "^0.6.2",
+    "husky": "^9.1.7"
+  }
+}
