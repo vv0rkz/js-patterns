@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>v1.0 - Theme Toggle (Observer Pattern)</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-theme="light">
+    <header>
+      <h1>Observer Pattern Demo</h1>
+      <button id="themeToggle">Toggle Theme</button>
+    </header>
+    <main>
+      <p>Current theme: <span id="currentTheme">light</span></p>
+      <p>Click button to switch themes</p>
+    </main>
+    <footer>All components are subscribed to themeObservable</footer>
+    <script type="module" src="observable.js"></script>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

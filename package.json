@@ -1,9 +1,10 @@
 {
   "name": "js-patterns",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Коллекция паттернов проектирования на JavaScript — с практическими примерами и пошаговым обучением.",
   "main": "index.js",
   "scripts": {
+    "start": "browser-sync start --server src/observer/v1-theme-toggle --files 'src/observer/v1-theme-toggle/**/*' --no-notify",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky",
     "jst": "jst",
@@ -17,6 +18,7 @@
     "@commitlint/cli": "^20.4.0",
     "@commitlint/config-conventional": "^20.4.0",
     "@vv0rkz/js-template": "^1.4.0",
+    "browser-sync": "^3.0.4",
     "changelogen": "^0.6.2",
     "husky": "^9.1.7"
   }
