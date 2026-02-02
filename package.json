@@ -1,6 +1,6 @@
 {
   "name": "js-patterns",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Коллекция паттернов проектирования на JavaScript — с практическими примерами и пошаговым обучением.",
   "main": "index.js",
   "scripts": {
