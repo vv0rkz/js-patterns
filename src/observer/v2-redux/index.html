@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>v2.0 - Theme Toggle (Mini Redux)</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-theme="light">
+    <!-- Шаг 1: [Фича #2] -->
+    <!-- Создать header с:
+       - h1 "Theme Toggle (Mini Redux)"
+       - p "Observer Pattern → Redux Pattern"
+       - button#themeToggle "Toggle Theme" -->
+    <header>
+      <div>
+        <h1>Theme Toggle (Mini Redux)</h1>
+        <p>Observer Pattern → Redux Pattern</p>
+      </div>
+      <button id="themeToggle">Toggle Theme</button>
+    </header>
+
+    <!-- Шаг 2: [Фича #1] -->
+    <!-- Создать main с:
+       - p "Current theme: " + span#currentThemeText "light"
+       - div.comparison с таблицей сравнения v1.0 vs v2.0 -->
+    <main>
+      <p>Current theme: <span id="currentThemeText">light</span></p>
+
+      <div class="comparison">
+        <h2>Сравнение v1.0 vs v2.0</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Аспект</th>
+              <th>v1.0 (Observer)</th>
+              <th>v2.0 (Redux)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Изменение темы</td>
+              <td><code>notify('dark')</code></td>
+              <td><code>dispatch({ type: 'TOGGLE_THEME' })</code></td>
+            </tr>
+            <tr>
+              <td>Хранение state</td>
+              <td>Переменная <code>currentTheme</code></td>
+              <td><code>store.getState().theme</code></td>
+            </tr>
+            <tr>
+              <td>Логика изменения</td>
+              <td>Подписчики сами решают</td>
+              <td>Reducer (чистая функция)</td>
+            </tr>
+            <tr>
+              <td>История</td>
+              <td>Нет</td>
+              <td>Можно логировать actions</td>
+            </tr>
+            <tr>
+              <td>Предсказуемость</td>
+              <td>Средняя</td>
+              <td>Высокая (state только через reducer)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <!-- Шаг 3: [Фича #2] -->
+    <!-- Создать footer с текстом "Open Console to see Redux flow" -->
+    <footer>Open Console to see Redux flow</footer>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
