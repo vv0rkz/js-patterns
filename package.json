@@ -4,7 +4,10 @@
   "description": "Коллекция паттернов проектирования на JavaScript — с практическими примерами и пошаговым обучением.",
   "main": "index.js",
   "scripts": {
-    "start": "browser-sync start --server src/observer/v2-redux --files 'src/observer/v2-redux/**/*' --no-notify",
+    "start": "npm run start:v1",
+    "start:v1": "browser-sync start --server src/observer --files 'src/observer/**/*' --no-notify --no-ui --index usage/theme-toggle/v1/index.html",
+    "start:v2": "browser-sync start --server src/observer --files 'src/observer/**/*' --no-notify --no-ui --index usage/theme-toggle/v2-redux/index.html",
+    "start:v3": "browser-sync start --server src/observer --files 'src/observer/**/*' --no-notify --no-ui --index usage/theme-toggle/v3-combine-reducers/index.html",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky",
     "jst": "jst",

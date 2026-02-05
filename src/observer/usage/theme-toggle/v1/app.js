@@ -1,4 +1,4 @@
-import { Observable } from './observable.js'
+import { Observable } from '/observable.js'
 
 const THEME_KEY_LOCAL_STORAGE = 'theme'
 export const Theme = Object.freeze({

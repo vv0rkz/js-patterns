@@ -1,4 +1,4 @@
-import { createStore } from './miniRedux.js'
+import { createStore } from './../../../realizations/redux-store.js'
 import { themeReducer } from './themeReducer.js'
 
 // ====== СОЗДАНИЕ STORE ======
