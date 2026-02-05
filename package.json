@@ -4,7 +4,10 @@
   "description": "Коллекция паттернов проектирования на JavaScript — с практическими примерами и пошаговым обучением.",
   "main": "index.js",
   "scripts": {
-    "start": "browser-sync start --server src/observer/v1-theme-toggle --files 'src/observer/v1-theme-toggle/**/*' --no-notify",
+    "start": "npm run start:v1",
+    "start:v1": "browser-sync start --server src/observer --files 'src/observer/**/*' --no-notify --no-ui --index usage/theme-toggle/v1/index.html",
+    "start:v2": "browser-sync start --server src/observer --files 'src/observer/**/*' --no-notify --no-ui --index usage/theme-toggle/v2-redux/index.html",
+    "start:v3": "browser-sync start --server src/observer --files 'src/observer/**/*' --no-notify --no-ui --index usage/theme-toggle/v3-combine-reducers/index.html",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky",
     "jst": "jst",
@@ -17,7 +20,7 @@
   "devDependencies": {
     "@commitlint/cli": "^20.4.0",
     "@commitlint/config-conventional": "^20.4.0",
-    "@vv0rkz/js-template": "^1.4.0",
+    "@vv0rkz/js-template": "^1.7.0",
     "browser-sync": "^3.0.4",
     "changelogen": "^0.6.2",
     "husky": "^9.1.7"
